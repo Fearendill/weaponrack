@@ -18,9 +18,14 @@ public class ModBlocks {
     // Déclaration du bloc - PAS d'appel à registerBlocks() ici !
     public static final Block WEAPON_RACK = new WeaponRackBlock(
         AbstractBlock.Settings.create()
-            .strength(2.0f, 3.0f)
+            .strength(2.0f)
             .sounds(BlockSoundGroup.WOOD)
             .nonOpaque()
+            .noCollision()
+            .allowsSpawning((s, w, p, e) -> false)
+            .solidBlock((s, w, p) -> false)
+            .suffocates((s, w, p) -> false)
+            .blockVision((s, w, p) -> false)
     );
     
     public static void registerBlocks() {

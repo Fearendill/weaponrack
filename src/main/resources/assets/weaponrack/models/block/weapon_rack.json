@@ -1,13 +1,13 @@
 {
-    "credit": "Made with Blockbench",
-    "textures": {
+  "parent": "minecraft:block/block",
+  "textures": {
         "0": "block/oak_planks",
         "1": "block/oak_log",
         "2": "block/oak_log_top",
         "particle": "block/oak_planks"
     },
-    "elements": [
-        {
+  "elements": [
+     {
             "from": [
                 5.9,
                 2.93,
